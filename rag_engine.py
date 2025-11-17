@@ -34,7 +34,7 @@ EMBEDDINGS = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 print("Modelo de embedding local cargado.")
 
 # ==========================================
-# 📚 BASE VECTORIAL FAISS (Todo-en-uno)
+# BASE VECTORIAL FAISS (Todo-en-uno)
 # ==========================================
 
 def get_vectorstore():
@@ -127,4 +127,5 @@ Respuesta clara y concisa:
         if "429" in str(e):
             return " El servicio de Gemini está temporalmente saturado. Intenta de nuevo en unos minutos."
         else:
+
             raise e
